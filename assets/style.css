@@ -13,16 +13,7 @@
   --font-serif: "Noto Serif JP", "Yu Mincho", serif;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #12110f; --surface: #1c1a17; --text: #eee9df; --muted: #a59d90; --border: #33302b;
-    --accent: #ff4d5e; --accent-soft: rgba(255, 77, 94, .12); --kumite: #ff6b78; --kata: #6aa3ff; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #12110f; --surface: #1c1a17; --text: #eee9df; --muted: #a59d90; --border: #33302b;
-  --accent: #ff4d5e; --accent-soft: rgba(255, 77, 94, .12); --kumite: #ff6b78; --kata: #6aa3ff; color-scheme: dark;
-}
+/* 端末がダークモードでも常に明るい配色で表示する（暗い背景は読みにくいとの要望） */
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
